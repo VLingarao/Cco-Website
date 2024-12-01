@@ -32,10 +32,10 @@ function Contact() {
       // Send the email using EmailJS
       emailjs
         .send(
-          "service_ewxip1j", // Your Service ID
-          "template_zfwo1c8", // Your Template ID
+          " ", // Your Service ID
+          " ", // Your Template ID
           templateParams,     // Data to send to template
-          "9_-XMY0rTDOI3Wm_t" // Your User ID (Private Key)
+          " " // Your User ID (Private Key)
         )
         .then(
           () => {
