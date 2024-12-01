@@ -1,0 +1,125 @@
+.testimonial-section {
+     text-align: center;
+     padding: 50px;
+   }
+   
+   h1 {
+     font-size: 2.5rem;
+     margin-bottom: 40px;
+     color: #07284c;
+     align-items: center;
+   }
+   
+   .testimonial-slider {
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .testimonial-container {
+     display: flex;
+     justify-content: center;
+   }
+   
+   .testimonial-card {
+     background-color: rgb(64, 166, 229);
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     max-width: 300px;
+     margin: 10px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     text-align: center;
+   }
+   
+   .testimonial-card:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+   }
+   
+   .testimonial-img img {
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     object-fit: cover;
+     margin-bottom: 15px;
+   }
+   
+   .testimonial-info {
+     padding: 10px;
+   }
+   
+   .testimonial-name {
+     font-size: 1.2rem;
+     font-weight: bold;
+     color: #224165;
+   }
+   
+   .testimonial-text {
+     font-size: 1rem;
+     color: white;
+     margin-top: 10px;
+     font-style: italic;
+   }
+   
+   /* Navigation Icons */
+   .navigation {
+     position: absolute;
+     top: 50%;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     transform: translateY(-50%);
+   }
+   
+   .nav-icon {
+     font-size: 2rem;
+     color: #333;
+     cursor: pointer;
+     transition: color 0.3s ease;
+     color: #07284c;
+   }
+   
+   .nav-icon:hover {
+     color: #4b7099;
+   }
+   
+   /* Pagination Dots */
+   .pagination {
+     margin-top: 20px;
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+   }
+   
+   .pagination-dot {
+     width: 10px;
+     height: 10px;
+     background-color: #ccc;
+     border-radius: 50%;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+   }
+   
+   .pagination-dot.active {
+     background-color: #07284c;
+   }
+   
+   .pagination-dot:hover {
+     background-color: #07284c;
+   }
+
+   @media (max-width: 340px){
+    .testimonial-section {
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 40px;
+      color: #07284c;
+      align-items: center;
+    }
+   }
+   

@@ -1,0 +1,213 @@
+.getcon-main-container {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 40px 0px;
+}
+
+.getcon-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+}
+
+.getcon-items-one {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.getcon-head h1{
+    font-size: 1.2rem;
+    color: #07284c;
+}
+.getcon-line{
+    border-bottom: 3px solid lightskyblue;
+    width: 60px;
+    margin-top: 12px;
+}
+
+.getcon-head-main {
+    margin-top: 5px;
+    font-size: 22px;
+    line-height: 45px;
+    font-weight: bold;
+    width: 660px;
+}
+
+.getcon-disc-one {
+    margin-top: 10px;
+    color: #8d8d8d;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    line-height: 28px;
+    width: 530px;
+}
+
+.getcon-button {
+    margin-top: 20px;
+    width: 180px;
+    background-color: rgb(64, 166, 229);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: #07284c;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.getcon-button:hover{
+    background-color: white;
+    border: 2px solid #07284c;
+    color: #07284c;
+    transition: background-color 0.3s ease, border 0.3s ease;  
+}
+
+
+.country-card{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.3rem;
+}
+.country-card-style{
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    transition: transform 0.3s ease; 
+}
+.country-card-style:hover {
+    transform: scale(1.1); 
+}
+
+
+/* Large screens and laptops (>= 1200px) */
+@media (max-width: 1200px) {
+    .getcon-container {
+        gap: 3rem;
+    }
+
+    .getcon-head-main {
+        font-size: 20px;
+        width: 600px;
+    }
+
+    .getcon-disc-one {
+        font-size: 1rem;
+        width: 600px;
+    }
+
+
+    .getcon-button {
+        font-weight: bold;
+        font-size: 1rem;
+        width: 150px;
+    }
+}
+
+/* Tablets (>= 768px and <= 1024px) */
+@media (max-width: 1024px) {
+    .getcon-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .getcon-line{
+        display: none;
+    }
+    .getcon-items-one {
+        width: 80%;
+        text-align: center;
+    }
+
+    .getcon-head-main {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .getcon-disc-one {
+        font-size: 1rem;
+        width: 90%;
+        text-align: start;
+    }
+
+
+
+    .getcon-button {
+        width: 140px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile screens (>= 480px and <= 768px) */
+@media (max-width: 768px) {
+    .getcon-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .getcon-items-one {
+        width: 90%;
+        text-align: center;
+    }
+
+    .getcon-head-main {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .getcon-disc-one {
+        font-size: 0.95rem;
+        width: 100%;
+        text-align: start;
+    }
+
+    .getcon-button {
+        width: 130px;
+        font-size: 1rem;
+    }
+}
+
+/* Extra small screens (<= 480px) */
+@media (max-width: 480px) {
+    .getcon-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .getcon-items-one {
+        width: 90%;
+        text-align: center;
+    }
+
+    .getcon-head-main {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .getcon-disc-one {
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: start;
+    }
+
+
+    .getcon-button {
+        width: 120px;
+        font-size: 0.95rem;
+    }
+    .country-card{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1rem;
+    }
+    .country-card-style{
+        width: 230px;
+        height: 280px;
+        border-radius: 5px;
+    }
+}
+

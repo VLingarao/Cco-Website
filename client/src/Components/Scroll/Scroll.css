@@ -1,0 +1,35 @@
+.scroll-button{
+    display: flex;
+    justify-content: end;
+   
+  }
+  .button-tag{
+    position: fixed;
+    bottom: 6%;
+    margin: 0px 30px 0px 0px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    border: solid 1px #0577a4;
+    background-color: #07b2f5;
+    border-radius: 50%;
+    animation: moveUpDown 2s infinite
+  }
+  .button-tag:hover{
+    background-color: transparent;
+    color: #07b2f5;
+  }
+  
+  
+  @keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+  

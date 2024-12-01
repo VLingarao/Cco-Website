@@ -1,0 +1,269 @@
+.hero-main-container-group{
+    padding-top: 140px;
+}
+.hero-main-container {
+    background-size: cover; 
+    background-position: center; 
+    /* margin-top: 100px; */
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    overflow: hidden;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.hero-container-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 7rem;
+    max-width: 1200px;
+    width: 100%;
+    padding: 1rem;
+    flex-wrap: wrap; 
+}
+
+.hero-left-item {
+    margin-top: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 50%;
+    min-width: 300px; 
+}
+
+.hero-left-item h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-left-item p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero-left-item .button-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.button-one{
+    background-color: #2eb6ea;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #07284c;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-two{
+    background-color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #07284c;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* padding: 2rem; */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    min-width: 250px;
+}
+.contact-head{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    padding: 10px 0px;
+    text-align: center;
+    color: #2eb6ea;
+    background-color: #07284c;
+    width: auto;
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 2rem;
+}
+
+.contact-items input,
+.contact-items select {
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-items button {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #2eb6ea;
+    color: #07284c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/* Media Queries for smaller screens */
+@media (max-width: 1024px) {
+    .hero-main-container{
+        padding: 200px 0px;
+    }
+    .hero-container-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .hero-left-item {
+        max-width: 100%; 
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .contact-card {
+        width: 80%;
+        padding: 1.5rem;
+    }
+
+
+    .contact-items input,
+    .contact-items select {
+        width: 100%;
+    }
+
+    .hero-left-item h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-left-item p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-main-container{
+        padding: 200px 0px;
+    }
+    .hero-left-item h1 {
+        font-size: 2rem;
+    }
+
+    .hero-left-item p {
+        font-size: 1rem;
+    }
+
+    .contact-items input,
+    .contact-items select {
+        padding: 0.75rem;
+    }
+
+    .contact-items button {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-main-container-group{
+        padding-top: 100px;
+    }
+    .hero-main-container{
+        /* margin-top: 40px; */
+        padding: 25px 0px;
+        height: auto;
+    }
+    .hero-left-item h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-left-item p {
+        font-size: 0.9rem;
+        align-items: start;
+    }
+
+    .contact-card {
+        width: 90%;
+        padding: 1rem;
+    }
+    .contact-items{
+        padding: 10px;
+    }
+
+    .contact-items input,
+    .contact-items select,
+    .contact-items button {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+}
+
+
+
+@media (max-width: 360px) {
+    .contact-card {
+        background-color: rgba(255, 255, 255, 0.8);
+        /* padding: 2rem; */
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        min-width: 250px;
+    }
+    .contact-items{
+        padding: 10px;
+    }
+    .contact-items input,
+    .contact-items select,
+    .contact-items button {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+}
+
+
+
+@media (max-width: 300px) {
+    .contact-card {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 220px;
+        min-width: 210px;
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+    .contact-items{
+        padding: 0px 25px 0px 0px;
+    }
+    .contact-items input,
+    .contact-items select,
+    .contact-items button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

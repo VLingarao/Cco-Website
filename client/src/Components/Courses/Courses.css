@@ -1,0 +1,102 @@
+.Courses-main-container{
+    background-color: #224165;
+}
+.main-head{
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+}
+.course-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 30px;
+    gap: 3rem;
+}
+.course-item{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.course-img{
+    background-color: rgb(64, 166, 229);
+    padding: 30px;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+}
+.course-name{
+    font-size: 15px;
+    font-weight: bold;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .course-list{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 440px) {
+    .course-list{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0.5rem;
+    }
+    .course-item{
+        width: 160px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.2rem;
+    }
+    .course-img{
+        background-color: rgb(64, 166, 229);
+        padding: 30px;
+        border-radius: 60px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 360px) {
+    .course-list{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0.5rem;
+    }
+    .course-item{
+        width: 130px;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.2rem;
+    }
+    .course-img{
+        background-color: rgb(64, 166, 229);
+        padding: 30px;
+        border-radius: 60px;
+        width: 40px;
+        height: 40px;
+    }
+    .course-name{
+        font-size: 10px;
+        font-weight: bold;
+        align-items: center;
+    }
+}
